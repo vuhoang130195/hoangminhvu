@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #868e96;
+}
+
+h1,
+h2,
+li {
+  color: #495057;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#project a {
+  text-decoration: none;
+  color: #868e96;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* HEADER */
+  header {
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(33, 33, 33, 0.6),
+        rgba(33, 33, 33, 0.6)
+      ),
+      url(../images/banner.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+
+  header h1 {
+    color: #fff;
+  }
+
+  .empty {
+    height: 15vh;
+  }
+
+  /* NAVBAR */
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-link {
+    height: 8vh;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #339af0;
+  }
+
+  .profile-link:nth-child(3) {
+    width: 5%;
+  }
+
+  .profile-link:last-child {
+    border-right: 1px solid #339af0;
+  }
+
+  .icon-user,
+  .icon-doc-text-inv,
+  .icon-mail-alt,
+  .icon-star-1 {
+    color: #339af0;
+    margin-right: 5px;
+  }
+
+  .nav-bar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #495057;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  /* TARGET & PERSONAL INFO */
+  #target,
+  #personal-info {
+    height: auto;
+    width: 50%;
+    padding: 40px 5%;
+  }
+
+  #target {
+    background-color: #f7f7f7;
+  }
+
+  #personal-info {
+    background-color: #f1f3f5;
+  }
+
+  .target,
+  .info {
+    line-height: 30px;
+  }
+
+  .info {
+    list-style: none;
+    padding-inline: 0;
+  }
+
+  .icon-contact a {
+    color: #339af0;
+  }
+
+  /* EXPERIENCES - EDUCATION - ACTIVITIES */
+  #job-info {
+    padding: 50px 15%;
+    columns: 2;
+  }
+
+  .container {
+    border: 1px solid #dbe4ff;
+    padding: 50px 10%;
+    line-height: 30px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5%;
+  }
+
+  .job-info {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr;
+  }
+
+  .job-info h1 {
+    font-size: 25px;
+    margin-inline-start: 10px;
+    align-self: end;
+  }
+
+  .job-icon {
+    font-size: 42px;
+    color: #868e96;
+    justify-self: center;
+  }
+
+  .job-info ul {
+    grid-column: 1/-1;
+  }
+
+  .job-info li {
+    margin-top: 30px;
+  }
+
+  .job-info li::marker {
+    font-size: 20px;
+    color: #339af0;
+  }
+
+  .time {
+    background-color: #339af0;
+    color: #fff;
+    padding: 6px 5%;
+    border-radius: 25px;
+  }
+
+  /* HOBBY */
+  #hobby {
+    grid-column: 1/-1;
+  }
+
+  .hobby {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+  .hobby i {
+    padding: 10px;
+    font-size: 18px;
+    color: #339af0;
+    border: 1px solid #339af0;
+    border-radius: 50%;
+  }
+
+  .hobby i:nth-child(2) {
+    padding: 10px 13px;
+  }
+
+  .hobby i:nth-child(3) {
+    padding: 10px 12px;
+  }
+
+  .hobby p {
+    font-size: 12px;
+  }
+
+  /* LANGUAGES - SKILLS */
+  .languages-skills {
+    margin-inline-start: 10px;
+    margin-top: 30px;
+  }
+
+  .blue,
+  .grey {
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 23%;
+    margin-bottom: 10px;
+  }
+
+  .blue {
+    background-color: #339af0;
+  }
+
+  .grey {
+    background-color: #dee2e6;
+  }
+
+  /* CERTIFICATE */
+  #certificate {
+    padding: 20px 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 1fr 1fr;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+
+  #certificate h1 {
+    margin-top: 20px;
+    grid-column: 1/-1;
+  }
+
+  .certificate {
+    height: 41vh;
+  }
+
+  .cer-web,
+  .cer-js {
+    margin: 40px 0;
+  }
+
+  .cer-js {
+    padding-left: 5%;
+    border-left: 1px solid #d6c08d;
+  }
+
+  .cer-dtb {
+    padding-top: 40px;
+    align-self: start;
+    border-top: 1px solid #d6c08d;
+  }
+
+  .cer-empty {
+    align-self: start;
+    border-top: 1px solid #d6c08d;
+  }
+
+  .cer-web img,
+  .cer-dtb img {
+    height: auto;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .cer-js img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .certificate h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .certificate p {
+    color: #868e96;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /* PROJECT */
+  #project {
+    padding: 50px 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  #project h1 {
+    grid-column: 1/-1;
+  }
+
+  .project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project img {
+    height: auto;
+    width: 100%;
+  }
+
+  .project h2 {
+    font-size: 20px;
+    padding: 15px 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 0;
+  }
+
+  .project-info {
+    line-height: 35px;
+    font-size: 16px;
+    padding: 15px 5%;
+    border: 1px solid #ced4da;
+    border-top: none;
+  }
+
+  .proj {
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  table {
+    height: 100%;
+    line-height: 30px;
+    border-collapse: collapse;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+  }
+
+  td {
+    vertical-align: top;
+    padding: 15px 3%;
+    font-size: 14px;
+    border-bottom: 1px solid #ced4da;
+  }
+
+  /* FOOTER */
+  #footer {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f7f7f7;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 26px;
+    color: #339af0;
+  }
+
+  .contact a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #339af0;
+  }
+}
